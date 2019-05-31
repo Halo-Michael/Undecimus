@@ -1032,6 +1032,8 @@ void jailbreak()
             dropbear_plist[@"ProgramArguments"][4] = NSJailbreakFile(@"bin/bash");
             dropbear_plist[@"ProgramArguments"][5] = @"-p";
             dropbear_plist[@"ProgramArguments"][6] = @"22";
+            dropbear_plist[@"ProgramArguments"][7] = @"-p";
+            dropbear_plist[@"ProgramArguments"][8] = @"2222";
             _assert([dropbear_plist writeToFile:NSJailbreakFile(@"Library/LaunchDaemons/dropbear.plist") atomically:YES], localize(@"Unable to create dropbear launch daemon."), true);
             _assert(init_file(jailbreak_file("Library/LaunchDaemons/dropbear.plist"), root_pw->pw_uid, 0644), localize(@"Unable to initialize dropbear launch daemon."), true);
         }

@@ -52,10 +52,10 @@ static BOOL darkMode = NO;
         progress(localize(@"Unsupported"));
     } else if (prefs->restore_rootfs) {
         status(localize(@"Restore RootFS"), true, true);
-        progress(@"Ready to restore RootFS");
+        progress(localize(@"Ready to restore RootFS"));
     } else if (jailbreakEnabled()) {
         status(localize(@"Re-Jailbreak"), true, true);
-        progress(@"Ready to re-jailbreak");
+        progress(localize(@"Ready to re-jailbreak"));
     } else {
         status(localize(@"Jailbreak"), true, true);
         progress(localize(@"Ready to jailbreak"));
@@ -107,6 +107,7 @@ static BOOL darkMode = NO;
     sharedController = self;
     bundledResources = bundledResourcesVersion();
     LOG("unc0ver Version: %@", appVersion());
+    LOG("Compile & Translate: @Halo_Michael");
     printOSDetails();
     LOG("Bundled Resources Version: %@", bundledResources);
     if (bundledResources == nil) {

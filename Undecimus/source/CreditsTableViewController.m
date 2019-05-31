@@ -52,6 +52,7 @@
     [self.umanghereButton setTitleColor:[UIColor whiteColor] forState:normal];
     [self.miscMistyButton setTitleColor:[UIColor whiteColor] forState:normal];
     [self.benButton setTitleColor:[UIColor whiteColor] forState:normal];
+    [self.halomichaelButton setTitleColor:[UIColor whiteColor] forState:normal];
     [self.samGButton setTitleColor:[UIColor whiteColor] forState:normal];
     [self.dennisButton setTitleColor:[UIColor whiteColor] forState:normal];
 }
@@ -83,6 +84,7 @@
     [self.umanghereButton setTitleColor:[UIColor blackColor] forState:normal];
     [self.miscMistyButton setTitleColor:[UIColor blackColor] forState:normal];
     [self.benButton setTitleColor:[UIColor blackColor] forState:normal];
+    [self.halomichaelButton setTitleColor:[UIColor blackColor] forState:normal];
     [self.samGButton setTitleColor:[UIColor blackColor] forState:normal];
     [self.dennisButton setTitleColor:[UIColor blackColor] forState:normal];
 }
@@ -199,6 +201,10 @@
 
 -(IBAction)tappedOnBen:(id)sender{
     [[UIApplication sharedApplication] openURL:[CreditsTableViewController getURLForUserName:@"benjweaverdev"] options:@{} completionHandler:nil];
+}
+
+-(IBAction)tappedOnHaloMichael:(id)sender{
+    [[UIApplication sharedApplication] openURL:[CreditsTableViewController getURLForUserName:@"halo_michael"] options:@{} completionHandler:nil];
 }
 
 - (IBAction)tappedOnSamG:(id)sender{

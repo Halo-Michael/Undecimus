@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		049C27C622A0A4B40051CE77 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 049C27C822A0A4B40051CE77 /* Localizable.strings */; };
+		049C27C922A0A4CA0051CE77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049C27CB22A0A4CA0051CE77 /* Main.storyboard */; };
 		2101395521A09BB700F9C5F2 /* hideventsystem.c in Sources */ = {isa = PBXBuildFile; fileRef = 2101395321A09BB700F9C5F2 /* hideventsystem.c */; settings = {COMPILER_FLAGS = "-Wno-everything"; }; };
 		2116449A21737F9500250744 /* JailbreakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C0FC6E21369EB700849420 /* JailbreakViewController.m */; };
 		212D8844216E4C4800A36DA5 /* find_port.c in Sources */ = {isa = PBXBuildFile; fileRef = 212D8842216E4C4700A36DA5 /* find_port.c */; };
@@ -67,10 +69,12 @@
 		51435081229E2F0C00446FBA /* Settings-Light.png in Resources */ = {isa = PBXBuildFile; fileRef = 51435080229E2F0C00446FBA /* Settings-Light.png */; };
 		51F1DB24229ED54400B81A6F /* DarkMode-Dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F1DB22229ED54300B81A6F /* DarkMode-Dark.png */; };
 		51F1DB25229ED54400B81A6F /* Settings-Dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F1DB23229ED54400B81A6F /* Settings-Dark.png */; };
-		8D592A68218E47F60035D2BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D592A67218E47F60035D2BC /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		049C27C722A0A4B40051CE77 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		049C27CA22A0A4CA0051CE77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		049C27CE22A0A4DB0051CE77 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		2101395321A09BB700F9C5F2 /* hideventsystem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hideventsystem.c; sourceTree = "<group>"; };
 		2101395421A09BB700F9C5F2 /* hideventsystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hideventsystem.h; sourceTree = "<group>"; };
 		211C372521CE2DD700ADBEA2 /* reboot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reboot.h; sourceTree = "<group>"; };
@@ -198,9 +202,7 @@
 		51F1DB26229F2AD200B81A6F /* RobotoMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Regular.ttf"; sourceTree = "<group>"; };
 		51F1DB27229F2BC700B81A6F /* RobotoMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Bold.ttf"; sourceTree = "<group>"; };
 		51F1DB28229F31C400B81A6F /* DarkMode-Light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DarkMode-Light.png"; sourceTree = "<group>"; };
-		51F1DB29229F31D300B81A6F /* DarkMode-Light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "DarkMode-Light.png"; path = "../../../../DarkMode-Light.png"; sourceTree = "<group>"; };
 		51F1DB2A229F325700B81A6F /* multi_path.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = multi_path.entitlements; sourceTree = "<group>"; };
-		8D592A67218E47F60035D2BC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -381,7 +383,6 @@
 				51F1DB22229ED54300B81A6F /* DarkMode-Dark.png */,
 				51F1DB23229ED54400B81A6F /* Settings-Dark.png */,
 				51435080229E2F0C00446FBA /* Settings-Light.png */,
-				51F1DB29229F31D300B81A6F /* DarkMode-Light.png */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -484,11 +485,12 @@
 				2170BDCB21B32FF10059BD10 /* source */,
 				2170BD3621B192B90059BD10 /* resources */,
 				2170BD3421B192750059BD10 /* include */,
-				8D592A67218E47F60035D2BC /* Main.storyboard */,
+				049C27CB22A0A4CA0051CE77 /* Main.storyboard */,
 				51F1DB2A229F325700B81A6F /* multi_path.entitlements */,
 				21C0FC7321369EB800849420 /* Assets.xcassets */,
 				21C0FC7521369EB800849420 /* LaunchScreen.storyboard */,
 				21C0FC7821369EB800849420 /* Info.plist */,
+				049C27C822A0A4B40051CE77 /* Localizable.strings */,
 			);
 			path = Undecimus;
 			sourceTree = "<group>";
@@ -585,6 +587,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 21C0FC5E21369EB700849420;
 			productRefGroup = 21C0FC6821369EB700849420 /* Products */;
@@ -604,8 +607,9 @@
 				51F1DB25229ED54400B81A6F /* Settings-Dark.png in Resources */,
 				51435081229E2F0C00446FBA /* Settings-Light.png in Resources */,
 				21C0FC7721369EB800849420 /* LaunchScreen.storyboard in Resources */,
+				049C27C622A0A4B40051CE77 /* Localizable.strings in Resources */,
 				51F1DB24229ED54400B81A6F /* DarkMode-Dark.png in Resources */,
-				8D592A68218E47F60035D2BC /* Main.storyboard in Resources */,
+				049C27C922A0A4CA0051CE77 /* Main.storyboard in Resources */,
 				21C0FC7421369EB800849420 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -688,6 +692,23 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		049C27C822A0A4B40051CE77 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				049C27C722A0A4B40051CE77 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		049C27CB22A0A4CA0051CE77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				049C27CA22A0A4CA0051CE77 /* Base */,
+				049C27CE22A0A4DB0051CE77 /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		21C0FC7521369EB800849420 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -703,6 +724,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -761,6 +783,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
